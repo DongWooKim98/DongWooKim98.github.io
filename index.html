@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/pangsu1.ico" rel="icon" type="image/x-icon">
-  <link href="assets/img/pangsu1.ico" rel="apple-touch-icon">
+  <link href="/assets/img/mincon2.png" rel="icon">
+  <link href="/assets/img/mincon2.png" rel="icon">
 
   <!-- Google Fonts -->
   <link
@@ -19,549 +19,573 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
   <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Template Name: MyResume
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="css/animate.css">
-  <!-- Icomoon Icon Fonts-->
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha384-0QhX/iTlE0p5Ov2Qn4KSQ0xyFpLT3xhgzjfzNv2z0fQR6rlp5b7dF6Z6jzN7QVDD" crossorigin="anonymous">
-  <!-- Bootstrap  -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- Theme style  -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Modernizr JS -->
-  <script src="js/modernizr-2.6.2.min.js"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&display=swap" rel="stylesheet">
-  <style>
-    #font1 {
-      font-family: 'Black Han Sans', sans-serif;
-      color: rgb(12, 12, 11);
-    }
-
-    #font2 {
-      font-family: 'Black Han Sans', sans-serif;
-      color: d2d2d2;
-    }
-
-    #font3 {
-      font-family: 'Black Han Sans', sans-serif;
-      color: antiquewhite;
-    }
-  </style>
 </head>
 
 <body>
+
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/김동우.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">김동우</a></h1>
-        <div class="social-links mt-3 text-center"> 
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div> 
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li class="#active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#services"><i class="bx bx-server"></i>Skill</a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#project"><i class="bx bx-book-content"></i> project</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-    </div>
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skill</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>        
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+    <style>
+      .glitch-window{
+      position: absolute;
+      top: 0;
+      left: 11px;
+      width: 100%;
+      color: #222222;
+      text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
+      overflow: hidden;
+      animation: crt-me 2500ms infinite linear alternate-reverse;	 
+      }
+
+      @keyframes crt-me {
+    0% {
+          clip: rect(31px, 9999px, 94px, 0)
+      }
+      10% {
+          clip: rect(112px, 9999px, 76px, 0)
+      }
+      20% {
+          clip: rect(85px, 9999px, 77px, 0)
+      }
+      30% {
+          clip: rect(27px, 9999px, 97px, 0)
+      }
+      40% {
+          clip: rect(64px, 9999px, 98px, 0)
+      }
+      50% {
+          clip: rect(61px, 9999px, 85px, 0)
+      }
+      60% {
+          clip: rect(99px, 9999px, 114px, 0)
+      }
+      70% {
+          clip: rect(34px, 9999px, 115px, 0)
+      }
+      80% {
+          clip: rect(98px, 9999px, 129px, 0)
+      }
+      90% {
+          clip: rect(43px, 9999px, 96px, 0)
+      }
+      100% {
+          clip: rect(82px, 9999px, 64px, 0)
+      }    
+}
+
+
+    </style>
+
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>😊김동우 포트폴리오😊</h1>
-      <p>🎙️<span class="typed"
-          data-typed-items="1998년생 입니다. ^^"></span></p>
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100" style="user-select: none;">
+      <header class="cohead">
+        <h1 class="glitched">✍️동우의 코딩스토리😊</h1>
+      </header>      
+      <p>🧑‍💻 동우는요 <span class="typed"
+          data-typed-items="긍정적인 사고를 가진 개발자 입니다., 스스로 해결하려는 의지를 가진 개발자 입니다., 새로움을 추구하는 개발자 입니다."></span></p>
+      <div class="social-links">
+        <a href="https://twitter.com/dygks0713" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://github.com/dongwookim98"><i class="bi bi-github"></i></a>
+      </div>
     </div>
+    <script>
+      $(".cohead").append("<div class='glitch-window'></div>");
+      //    fill div with clone of real header
+      $( "h1.glitched" ).clone().appendTo( ".glitch-window" );
+    </script>
+
   </section><!-- End Hero -->
+
   <main id="main">
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
+
         <div class="section-title">
-          <h2>About Me</h2>
+          <h2>About</h2>
         </div>
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/김동우.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>다양한 역량을 보유한 개발자</h3>
-            <p id="font1">열정있는 개발자 김동우입니다.</p>
-            <p id="font1">
-              끊임없는 노력으로 성공을 이루고 긍정적 사고를 가진 개발자가 되고 싶습니다.<br />
-              강인한 체력과 끈기를 바탕으로 IT 분야에서 지속적인 성장을 이어가고자 합니다.<br />
-              화합과 소통을 바탕으로 주변에 긍정적인 영향을 끼치는 개발자가 되겠습니다.
-            </p>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Web Developer &amp; Data Scientist.</h3>
+            <br>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Name:</strong> 김 동 우</li><br />
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> 010-5322-1998</li><br />
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> cjalex@naver.com</li><br />
-                  <li><i class="icofont-rounded-right"></i> <strong>Github:</strong><a href="https://github.com/dongwookim98"
-                      target="_blank"> https://github.com/dongwookim98</a></li><br />
-                  <li><i class="icofont-rounded-right"></i> <strong>Address:</strong> 청주시 </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>이름:</strong> <span>김동우</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>생년월일:</strong> <span>1998.10.15</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>전화번호:</strong> <span>010-5322-1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>거주지:</strong> <span>충북 청주시 청원구</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>나이:</strong> <span>27</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong>                    
+                    <a href="https://github.com/dongwookim98" style="color: black;">
+                      <span>https://github.com/dongwookim98</span>
+                    </a>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>이메일:</strong> <span>cjalex@naver.com</span></li>
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container">
-          <div class="section-title">
-            <h2>Skill</h2>
-            <h4>현재까지 배우고 사용 해봤던 기술입니다.</h4>
-          </div>
-          <!--언어-->
-          <div class="row">
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-              <div class="icon"><i class="icofont-earth"></i></div>
-              <h4 class="title">Programming Languages</h4>
-              <p class="description">
-                JAVA</br>
-                HTML/CSS/JS</br>
-                JSP<br>
-                C<br>
-                Python</br>
-                SQL
-              </p>
-            </div>
-            <!--Framework/Library-->
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="icofont-library"></i></div>
-              <h4 class="title">Framework/Library</h4>
-              <p class="description">
-                Spring/SpringBoot<br>
-                BootStrap<br>
-              </p>
-            </div>
-            <!-- Build Tools -->
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="icofont-fix-tools"></i></div>
-              <h4 class="title">Build Tools</h4>
-              <p class="description">
-                MAVEN<br>
-              </p>
-            </div>
-            <!-- IDEs & Code Editors -->
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="icofont-edit-alt"></i></div>
-              <h4 class="title">IDEs & Code Editors</h4>
-              <p class="description">
-                Eclipse IDE<br>
-                IntelliJ IDEA<br>
-                VSCode<br>
-                STS (Spring Tools 4 for Visual Studio Code)<br>
-              </p>
-            </div>
-          <!-- Cloud & Services -->
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-cloudapp"></i></div>
-            <h4 class="title">Cloud & Services</h4>
-            <p class="description">
-              Amazon AWS
+            <p class="fst-italic" style="margin-top: 10px; color: rgb(224, 99, 99); font-weight: 700; font-size: 13px;">
+              열정 : [형용사] 어떤 일에 대해 열렬한 마음을 가지는 것을 말함.
+            </p>
+            <p class="fst-italic" style="margin-top: 10px; color: rgb(224, 99, 99); font-weight: 700; font-size: 13px;">
+              정답을 찾을 것이다. 늘 그래왔듯이..
+            </p>
+            <p style="font-weight: 500; font-size: 15px;">
+              열정, 그 자체로 제 자신을 표현하는 형용사입니다.
+              <span style="font-weight: 600;">새로움을 추구하며</span> 열정적인 태도로 목적을 향해 밤을 새우는 일도 두렵지 않습니다.
+              언제나 이용자의 입장에서 생각하고 테스트를 여러 번 거치며 작업에 최선을 다하는 것이 제 원칙입니다.<br>
+              신입으로서 <span style="font-weight: 600;">"卧薪尝胆(와신상담)"</span> 하는 자세를 갖추고 화합을 통해 주변에 긍정적인 제 열정을 보여드리겠습니다.
             </p>
           </div>
-        <!-- Server & Virtualization -->
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="icofont-server"></i></div>
-          <h4 class="title">Server & Virtualization</h4>
-          <p class="description">
-            Apache Tomcat<br>
-          </p>
         </div>
-      <!-- Version Control -->
-      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon"><i class="icofont-github"></i></div>
-        <h4 class="title">Version Control</h4>
-        <p class="description">
-          SVN<br>
-          JENKINS<br>
-          Git / Github
-        </p>
+
       </div>
-    <!-- DataBase -->
-    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-      <div class="icon"><i class="icofont-database"></i></div>
-      <h4 class="title">DataBase</h4>
-      <p class="description">
-        Oracle DB<br>
-        Maria DB<br>
-      </p>
-    </div>
-  <!-- Operating Systems -->
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-    <div class="icon"><i class="icofont-computer"></i></div>
-    <h4 class="title">Operating Systems(OS)</h4>
-    <p class="description">
-      Windows<br>
-    </p>
-  </div>
-</div>
-        </div>
-      </section><!-- End Services Section -->
-      <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
-        <div class="container">
-          <div class="section-title">
-            <h2>Resume</h2>
-            <h4>학력, 자격증, 대외활동에 대한 설명입니다.</h4>
-          </div>
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-up">
-              <h3 class="resume-title">Education</h3>
-              <!--고등학교-->
-              <div class="resume-item">
-                <h4>청주 세광고등학교</h4>
-                <h5>2014.03 - 2016.02</h5>
-                <p>자연계 졸업</p>
-                <p></p>
-              </div>
-              <!--대학교-->
-              <div class="resume-item">
-                <h4>서원대학교</h4>
-                <h5>2018.03 - 2025.02</h5>
-                <p>컴퓨터공학과 졸업예정</p>
-                <ul>
-                  <li>컴퓨터과학 분야의 다양한 주제를 다루며 프로그래밍 언어, 소프트웨어 공학, 데이터베이스, 알고리즘, 웹 프로그래밍, 네트워크, 운영체제, 빅데이터 분석, 블록체인, 프로젝트
-                    관리, 객체지향 분석 및 설계, 지능형 시스템, 모바일 및 임베디드 프로그래밍과 같은 다양한 IT 분야에 관련된 기술과 지식을 습득했습니다.</li>
-                </ul>
-              </div>
-            </div>
-            <!--대외활동-->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">External activities</h3>
-              <div class="resume-item">
-                <h4>(계룡건설)빅데이터 기반 Green Tech SW개발자 과정</h4>
-                <h5>2023.12.29 ~ 2024.06.14</h5>
-                <p> 풀스텍 개발 과정 수강중.ing</p>
-                <ul>
-                  <li>2050 탄소중립 시나리오에 발맞추어 환경문제와 관련된 소프트웨어 기술 및 풀스택 개발자가 되기위한 기술을 습득했습니다.</li>
-                  <li>주요 학습내용:<br/>
-                    - 자바 언어의 문법과 기본적인 개념<br/>
-                    - 자바프로그램을 활용한 웹 구축 및 운영 경험에 대한 노하우 습득<br/>
-                    - JavaServer Pages(JSP)와 Servlet을 이용하여 동적인 웹 페이지 구현<br/>
-                    - 빅데이터, 인공지능을 활용한 데이터수집·분석 및 예측 업무기술 습득<br/>
-                    · Spring Boot프레임워크 기반으로 한 웹개발 및 운영기술<br/>
-                    · 프로젝트를 통한 실전 경험 및 취업에 필요한 결과물 도출<br/>
-                  </li>
-                  <li>개인 프로젝트(참치 예측 프로그램)</li>
-                  <li>팀 프로젝트(에너지 관리 시스템)</li>
-                </ul>
-              </div>
-            </div>
-		  <!--수상-->
-	      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Awards</h3>
-              <div class="resume-item">
-		      <h4>학생 창업유망팀 300 경진대회 - 성장트랙 최종 선정</h4>
-		      <h5>2022.08.31</h5></br>
-		      <h4>- 내용: 뛰어난 기업가정신과 성장가능성을 보유한 창업팀으로 인정받아 2022년도 학생 창업유망팀 200 경진대회 성장트랙에 최종 선정</h4>
-			<p>* 교육부장관<p>
-                <img src="assets/img/sang1.png" class="img-fluid" alt="" width="300" height="400">
-                </p>
-              </div>
+    </section><!-- End About Section -->
 
-              <div class="resume-item">
-              <h4>미래 융합 교육원 - 최우수상</h4>
-              <h5>0000.00.00</h5></br>
-              <h4>- 내용: Green Tech SW개발 프로젝트 결과물 최우수</h4>
-          <p>* 미래융합교육원장<p>
-                    <img src="assets/img/sang2.png" class="img-fluid" alt="" width="300" height="400">
-                    </p>
-                  </div>
-
-                 <div class="resume-item">
-		      <h4>미래 융합 교육원 - 공로상</h4>
-		      <h5>0000.00.00</h5></br>
-		      <h4>- 내용: 밝은 교육환경을 조성하는 데 선도적인 역할을 함</h4>
-			<p>* 미래융합교육원장<p>
-                <img src="assets/img/sang3.png" class="img-fluid" alt="" width="300" height="400">
-                </p>
-              </div>
+    <!-- ======= Facts Section ======= -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p style="font-size: 17px; font-weight: 800;">이제까지 배우고 사용해봤던 기술입니다.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-cast"></i></div>
+            <h4 class="title"><a href="">Language</a></h4>
+            <p class="description">JAVA<br>
+              HTML/CSS/JS<br>
+              JSP<br>
+              Python<br>
+              MarkDown<br>
+              SQL<br>
+            </p>
           </div>
-            <!--자격증-->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Certificate</h3>
-              <div class="resume-item">
-                <h4>네트워크 관리사 2급</h4>
-                <h5>2023.05.23</h5>
-                <p></p>
-                <p>
-                </p>
-              </div>
-              <div class="resume-item">
-                <h4></h4>
-                <h5></h5>
-                <p></p>
-                <p>
-                </p>
-              </div>
-              <div class="resume-item">
-                <h4></h4>
-                <h5>0000.00.00</h5>
-                <p></p>
-                <p>
-                </p>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-front"></i></div>
+            <h4 class="title"><a href="">FrontEnd</a></h4>
+            <p class="description">
+              BootStrap<br>
+              JavaScript(jquery)<br>
+              HTML5<br>
+              CSS<br>              
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-hdd-network"></i></div>
+            <h4 class="title"><a href="">Server & Virtualization</a></h4>
+            <p class="description">Apache Tomcat</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-back"></i></div>
+            <h4 class="title"><a href="">BackEnd</a></h4>
+            <p class="description">Spring/SpringBoot<br>
+              JSP/JSTL<br>
+              </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-gear-wide"></i></div>
+            <h4 class="title"><a href="">IDEs & Code Editors</a></h4>
+            <p class="description">Eclipse IDE<br>
+              IntelliJ IDEA<br>
+              Pycharm<br>
+              VSCode<br>
+              STS (Spring Tools 4 for Visual Studio Code)<br>
+              SourceTree<br>              </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h4 class="title"><a href="">Build Tools</a></h4>
+            <p class="description">MAVEN<br>            
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h4 class="title"><a href="">Version Control</a></h4>
+            <p class="description">SVN<br>
+              JENKINS<br>
+              Git / Github<br>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-database"></i></div>
+            <h4 class="title"><a href="">DataBase(DB)</a></h4>
+            <p class="description">Oracle<br>              
+              MyBatis</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-hdd-network-fill"></i></div>
+            <h4 class="title"><a href="">Framework/Library</a></h4>
+            <p class="description">Spring/SpringBoot<br>                         
+              JQuery<br>
+              Chart.js<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg" style="padding-top: 0;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <!-- <h2>Skills</h2> -->
+          <p style="font-size: 17px; font-weight: 800;">개인적으로 생각하는 개발스킬에 대한 숙련도 입니다.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
-        </div>
-      </section>
-      <!-- End Resume Section -->
-      <!-- ======= project Section ======= -->
-      <section id="project" class="portfolio section-bg">
-        <div class="container">
-          <div class="section-title">
-            <h2>Project</h2>
-            <h4>[Github Link] = 코드주소 / [프로젝트 문서] = 발표자료</h4>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">10%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-Web">Web</li>
-                <li data-filter=".filter-AI">AI</li>
-                <li data-filter=".filter-Console">Console</li>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">C <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Spring <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p style="font-size: 17px; font-weight: 800;">학력, 자격증, 대외활동에 대한 설명입니다.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+        
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>청주 세광고등학교</h4>
+              <h5>2014 - 2016</h5>
+            </div>
+            <div class="resume-item">
+              <h4>서원대학교</h4>
+              <h5>2018.03 - 2025.02</h5>              
+              <p>컴퓨터공학과 졸업</p>
+            </div>
+
+
+
+            <h3 class="resume-title">Awards</h3>
+            <div class="resume-item pb-0">
+              <h4>미래융합교육원 -미소상</h4>
+              <h5>2024.05.28</h5> 
+              <p><em>과정 중 개인 프로젝트, 코딩 테스트, 출석 부문 종합 미소 우수.</em></p>
+             
+            </div>
+
+            <div class="resume-item">
+              <h4>학생 창업유망팀 300 경진대회 - 성장트랙 최종 선정</h4>
+              <h5>2022.08.31</h5>
+              <p><em>내용: 뛰어난 기업가정신과 성장가능성을 보유한 창업팀으로 인정받아 2022년도 학생 창업유망팀 200 경진대회 성장트랙에 최종 선정</em></p>
+              <p>* 교육부장관<p>
+            </div>
+            
+            <h3 class="resume-title">Certificate</h3>
+            <div class="resume-item">
+              <h4>정보처리기사 필기 합격</h4>
+              <h5>2024.05</h5>
+            </div>
+
+            <div class="resume-item">
+              <h4>네트워크 관리사 2급</h4>
+              <h5>2023.05</h5>
+            </div>
+
+            <div class="resume-item">
+              <h4>운전면허 1종 대형</h4>
+                <h5>2019.01</h5>
+            </div>
+
+            <div class="resume-item">
+              <h4>지게차 면허</h4>
+                <h5>2021</h5>
+            </div>
+
+            <div class="resume-item">
+              <h4>제과기능사 필기 합격</h4>
+                <h5>2024</h5>
+            </div>
+
+
+
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>(계룡건설)빅데이터 기반 Green Tech SW개발자 과정</h4>
+              <h5>2023.12.29 ~ 2024.06.14</h5>
+              <p><em>풀스텍 개발 과정 수강중.ing</em></p>
+              <ul>
+                <li>2050 탄소중립 시나리오에 발맞추어 환경문제와 관련된 소프트웨어 기술 및 풀스택 개발자가 되기위한 기술을 습득했습니다.</li>
+                <li>주요 학습내용:<br/>
+                  - 자바 언어의 문법과 기본적인 개념<br/>
+                  - 자바프로그램을 활용한 웹 구축 및 운영 경험에 대한 노하우 습득<br/>
+                  - JavaServer Pages(JSP)와 Servlet을 이용하여 동적인 웹 페이지 구현<br/>
+                  - 빅데이터, 인공지능을 활용한 데이터수집·분석 및 예측 업무기술 습득<br/>
+                  · Spring Boot프레임워크 기반으로 한 웹개발 및 운영기술<br/>
+                  · 프로젝트를 통한 실전 경험 및 취업에 필요한 결과물 도출<br/>
+                </li>
+                <li>개인 프로젝트(참치 예측 프로그램)</li>
+                <li>팀 프로젝트(에너지 관리 시스템)</li>
               </ul>
-            </div>
+            </div>          
           </div>
-          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-             <!--프로젝트-->
-             <div class="col-lg-4 col-md-6 portfolio-item filter-Web filter-AI">
-              <div class="portfolio-links">
-                <img src="assets/img/proj.webp" class="img-fluid" alt="">
-                <p>
-                <h4>
-                  <a class="portfolio-links" href="깃허브경로"
-                    target="_blank">
-                    [Github Link]
-                  </a>
-                  <a class="portfolio-links"
-                    href="깃허브경로.pdf"
-                    target="_blank">
-                    [프로젝트 문서]
-                  </a>
-                </h4>
-                </p>
-                <h4>팀 프로젝트 - 탄소 중립 SW 개발</h4>
-                <hr>
-                <p><strong>프로젝트 기간 </strong>:0000.00.00 ~ 0000.00.00</p>
-                <p><strong>프로젝트 관리 방법론</strong> : 애자일 방법론(스크럼)</p>
-                <p><strong>역할 </strong> : PM /SM ( AI팀 )</p>
-                <hr>
-                <p><strong>프로젝트 도구</strong>:Spring-tool-suite, Pycharm, Jupyter, OracleDB 
-                  <br>SVN, JENKINS, JIRA, Github</p>
-                  <hr>
-                <p><strong>사용 기술</strong> :  Prophet 예측 모델 </p>
-                <p><strong>사용 언어</strong> : JAVA, JSP, HTML/CSS/JS, SQL, Python</p>
-                <hr>
-                <p>
-                  <strong>[프로젝트 설명]<br></strong>
-                  2050 탄소중립 시나리오 정책에 맞춰 탄소중립을 위한 가상의 BEMS(건물에너지시스템) 구축했습니다.<br><br>
-                  <strong>프로젝트 목표</strong>: 실시간 사용 에너지 확인 및 관측된 데이터로 학습을 통해 미래 사용량을 예측하며 에너지 사용량을 줄여 탄소중립 실현
-                  </p>
-                <hr>
-              </div>
-            </div>
-             <!--음식 분류 -->
-             <div class="col-lg-4 col-md-6 portfolio-item filter-AI">
-              <div class="portfolio-links">
-                <a><img src="assets/img/proj2.webp" class="img-fluid" alt=""></a>
-                <p>
-                <h4>
-                  <a class="portfolio-links" href="깃허브경로" target="_blank">
-                    [Github Link]
-                  </a>
-                  <a class="portfolio-links" href="깃허브경로.pdf"
-                    target="_blank">
-                    [프로젝트 문서]
-                  </a>
-                </h4>
-                </p>
-                <h4>개인프로젝트 - Exercise_Record V1.2 (foodinfo)</h4>
-                <hr>
-                <p><strong>프로젝트 기간 </strong>:2023.10.19 ~ 2023.10.26</p>
-                <hr>
-                <p><strong>프로젝트 방식</strong> : Deep Learning</p>
-                <p><strong>프로젝트 도구</strong> : Pycharm</p>
-                <p><strong>사용 기술</strong> : CNN, FLASK, AJAX </p>
-                <p><strong>사용 언어</strong> : Python</p>
-                <hr>
-                <p>
-                  <strong>[프로젝트 설명]<br></strong>
-                  <br>Exercise_Record 프로젝트에 AI(이미지 분류 모델)를 활용하기 위한 프로젝트.<br><br>
-                  <strong>프로젝트 목표</strong>: 음식 사진을 upload하면 모델을 통해 음식 분류 후 해당 음식 정보 반환<br>
-                  <br>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Web">
-              <div class="portfolio-links">
-                <img src="assets/img/proj3.webp" class="img-fluid" alt="">
-                <p>
-                <h4>
-                  <a class="portfolio-links" href="깃허브경로"
-                    target="_blank">
-                    [Github Link]
-                  </a>
-                  <a class="portfolio-links"
-                    href="깃허브경로.pdf"
-                    target="_blank">
-                    [프로젝트 문서]
-                  </a>
-                </h4>
-                </p>
-                <h4>개인프로젝트 - Exercise_Record</h4>
-                <hr>
-                <p><strong>프로젝트 기간 </strong>:2023.09.01 ~ 2023.09.22</p>
-                <hr>
-                <p><strong>프로젝트 방식</strong> : Spring MVC</p>
-                <p><strong>프로젝트 도구</strong> : Eclipse, Spring-tool-suite, OracleDB, Github</p>
-                <p><strong>사용 기술</strong> :,JQuery, AJAX, API(네이버,카카오)<br>XSS 공격을 방지(HtmlEscape라이브러리)<br>비밀번호 암호화(passwordEncoder) </p>
-                <p><strong>사용 언어</strong> : JAVA, JSP, HTML/CSS/JS, SQL</p>
-                <hr>
-                <p>
-                  <strong>[프로젝트 설명]<br></strong>
-                  Spring Framework를 사용하여 진행한 MVC 프로젝트 입니다.<br><br>
-                  <strong>프로젝트 목표</strong>: 개인의 운동일지를 작성하고 평가 및 분석하는 프로그램<br>
-                  <br>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-AI">
-              <div class="portfolio-links">
-                <a><img src="assets/img/proj.webp" class="img-fluid" alt=""></a>
-                <p>
-                <h4>
-                  <a class="portfolio-links" href="깃허브경로" target="_blank">
-                    [Github Link]
-                  </a>
-                  <a class="portfolio-links" href="깃허브경로.pdf"
-                    target="_blank">
-                    [프로젝트 문서]
-                  </a>
-                </h4>
-                </p>
-                <h4>팀 프로젝트 - 도로 교통 표지판 분류 및 인식 </h4>
-                <hr>
-                <p><strong>프로젝트 기간</strong> :2022.11.20 ~ 2022.12.10</p>
-                <p><strong>기여도 </strong> : 50%</p>
-                <hr>
-                <p><strong>프로젝트 방식</strong> : Machine Learning / Deep Learning</p>
-                <p><strong>사용 프로그램</strong> : Jupyter NoteBook / GoogleColab</p>
-                <p><strong>사용 언어</strong> : Python</p>
-                <hr>
-                <p>
-                  <strong>[프로젝트 개요]<br></strong>
-                  이 프로젝트는 교통 표지판 분류 및 인식 기능을 구현함으로써 자율주행 차량의 안전성을 향상시키는 것을 목표로 합니다. KAGGLE에서 제공된 대규모 교통 표지판 데이터셋을 활용,
-                  이미지 처리와 딥러닝 기술을 적용하여 교통 표지판을 식별하고 분류합니다.<br>
-                  <br><strong>[모델 아키텍처]<br></strong>
-                  이 프로젝트에서는 CNN아키텍처를 사용하였습니다. 합성곱 레이어와 풀링 레이어를 적절히 쌓아 모델의 복잡성을 표현하였고, 마지막에는 소프트맥스 함수를 사용하여 각 교통 표지판의
-                  클래스를 예측합니다<br>
-                 
-                </p>
-              </div>
-            </div>
-      </section>
-      <!-- End Portfolio Section -->
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials section-bg">
-      </section><!-- End Testimonials Section -->
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="container section-title">
-            <h2>CONTACT ME</h2>
-            <h4>포트폴리오를 끝까지 봐주셔서 감사합니다.</h4>
-          </div>
-          <div class="row" data-aos="fade-in">
-            <div class="container col-lg-10 d-flex align-items-stretch">
-              <div class="info">
-                <div class="address">
-                  <i class="icofont-google-map"></i>
-                  <h4>Location:</h4>
-                  <p>청주시</p>
-                </div>
-                <div class="email">
-                  <i class="icofont-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>cjalex@naver.com</p>
-                </div>
-                <div class="phone">
-                  <i class="icofont-phone"></i>
-                  <h4>Call:</h4>
-                  <p>010-5322-1998</p>
-                </div>
+        </div>
 
-                <div class="phone">
-                  <i class="icofont-github"></i>
-                  <h4>Github:</h4>
-                  <p><a href="https://github.com/DongWooKim98" target="_blank">https://github.com/DongWooKim98</a></p>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg" style="user-select: none;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p style="font-size: 17px; font-weight: 800;">그동안 해왔던 저의 프로젝트 입니다.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-Solo">Solo</li>
+              <li data-filter=".filter-Team">Team</li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-Team">
+            <div class="portfolio-wrap">
+              <img src="/assets/img/portfolio/team/ecoala1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>빅데이터 활용 전력소비 예측 시스템</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="https://github.com/minheock/Ecoala" title="깃허브 링크로 이동"><i class="bi bi-github"></i></a>                  
+                  <a href="/details/ecoala.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="개요 및 설명, 산출물 자료입니다."><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-Team">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/team/buble3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>거품없는 신발 쇼핑몰 BUBLE</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="https://github.com/minheock/BUBLE" title="깃허브 링크로 이동"><i class="bi bi-github"></i></a>
+                  <a href="/details/buble.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="개요 및 설명, 산출물 자료입니다."><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-      </section><!-- End Contact Section -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-Team">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/team/coala1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>코딩 알려주는 라이브톡 Coala</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="https://github.com/minheock/coala" title="깃허브 링크로 이동"><i class="bi bi-github"></i></a>
+                  <a href="/details/coala.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="개요 및 설명, 산출물 자료입니다."><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>지역:</h4>
+                <p>충북 청주시 청원구</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>이메일:</h4>
+                <p>cjalex@naver.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>개인번호:</h4>
+                <p>010-5322-1998</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <footer id="footer">
+    <div class="container">
+      <h3>DongWoo Kim</h3>
+      <p>A developer who always works hard with the will to learn</p>
+      <div class="social-links">
+        <a href="https://twitter.com/dygks0713" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://github.com/dongwookim98"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>dongwoo's portfolio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://osjang.com/">handMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
